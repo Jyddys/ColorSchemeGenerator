@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding-top: 5em;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.box {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5em 0;
+}
+
+input[type="color"] {
+  margin-left: 1em;
+  text-align: left;
+  border: none;
+}
+
+#get-color {
+  margin-right: 1em;
+}
+
+.colors {
+  height: 50vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.color {
+  height: 100%;
+  width: 10vw;
+  background-color: blue;
+}
+
+.hexs {
+  display: flex;
+  justify-content: space-around;
+}
+
+#color-1 {
+  background-color: #F55A5A;
+}
