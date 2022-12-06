@@ -11,31 +11,31 @@
   
   <main>
     <div class="box">
-      <input type="color" name="color" id="color-pick">
-      <select>
-        <option>Monochrome</option>
-        <option>Monochrome-dark</option>
-        <option>Monochrome-light</option>
-        <option>Analogic</option>
-        <option>Complement</option>
-        <option>Analogic-complement</option>
-        <option>Triad</option>
+      <input type="color" name="color" id="color-pick" value="#F55A5A">
+      <select id="theme-pick">
+        <option value="monochrome">Monochrome</option>
+        <option value="monochrome-dark">Monochrome-dark</option>
+        <option value="monochrome-light">Monochrome-light</option>
+        <option value="analogic">Analogic</option>
+        <option value="complement">Complement</option>
+        <option value="analogic-complement">Analogic-complement</option>
+        <option value="triad">Triad</option>
       </select>
       <button id="get-color">Get color scheme</button>
     </div>
-    <div class="colors">
+    <div class="colors" id="colors">
       <div class="color" id="color-1"></div>
       <div class="color" id="color-2"></div>
       <div class="color" id="color-3"></div>
       <div class="color" id="color-4"></div>
       <div class="color" id="color-5"></div>
     </div>
-    <div class="hexs">
-      <h3 id="hex-1">#F55A5A</h3>
-      <h3 id="hex-2">#2B283A</h3>
-      <h3 id="hex-3">#F55A5A</h3>
-      <h3 id="hex-4">#F55A5A</h3>
-      <h3 id="hex-5">#F55A5A</h3>
+    <div class="hexs" id="hexs">
+      <h3 class="hex-color" id="hex-1">#F55A5A</h3>
+      <h3 class="hex-color" id="hex-2">#2B283A</h3>
+      <h3 class="hex-color" id="hex-3">#F55A5A</h3>
+      <h3 class="hex-color" id="hex-4">#F55A5A</h3>
+      <h3 class="hex-color" id="hex-5">#F55A5A</h3>
       
     </div>
   </main>

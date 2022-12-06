@@ -1,16 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', sans-serif;
+  padding-top: 2em;
 }
 
 main {
-  padding-top: 5em;
+  border: 1px solid black;
+  border-radius: 2%;
   width: 50%;
   margin: 0 auto;
 }
 
 .box {
-  border: 1px solid black;
   display: flex;
   justify-content: space-between;
   padding: 1.5em 0;
@@ -20,10 +24,24 @@ input[type="color"] {
   margin-left: 1em;
   text-align: left;
   border: none;
+  width: 5em;
+  height: 3em;
+  cursor: pointer;
+
 }
 
 #get-color {
   margin-right: 1em;
+  font-family: 'Roboto', sans-serif;
+  padding: 1em;
+  background-color: #FFF;
+  border: 1px solid rgb(201, 201, 201);
+  border-radius: 2%;
+  cursor: pointer;
+}
+
+#get-color:hover {
+  background-color: rgb(245, 245, 245);
 }
 
 .colors {
@@ -46,3 +64,23 @@ input[type="color"] {
 #color-1 {
   background-color: #F55A5A;
 }
+
+.hex-color {
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+select {
+  font-family: 'Roboto', sans-serif;
+  border: 1px solid rgb(201, 201, 201);
+  border-radius: 2%;
+  width: 30%;
+}
+
+
+@media (max-width: 600px) {
+  body {
+    font-size: 1rem;
+  }
+}
+
