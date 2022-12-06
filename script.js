@@ -4,7 +4,7 @@ const color1 = document.getElementById('color-1')
 
 
 colorPickBtn.addEventListener('click', getColor)
-
+window.addEventListener('load',getColor)
 function getColor() {
 
   // Haetaan hex-arvo
@@ -14,7 +14,6 @@ let hexArvo = hexValue.value.slice(1,)
 
  // Haetaan color Scheme arvo
 let themePick = document.getElementById('theme-pick').value
-
 
 // API
 fetch("https://www.thecolorapi.com/scheme?hex=" + hexArvo + "&mode=" + themePick + "&count=5")
