@@ -1,19 +1,20 @@
 const colorPickValue = document.getElementById('color-pick')
 const colorPickBtn = document.getElementById('get-color')
-const color1 = document.getElementById('color-1')
-
 
 colorPickBtn.addEventListener('click', getColor)
 window.addEventListener('load',getColor)
+
+
+
 function getColor() {
 
   // Haetaan hex-arvo
-let hexValue = colorPickValue 
+const hexValue = colorPickValue 
 
-let hexArvo = hexValue.value.slice(1,)
+const hexArvo = hexValue.value.slice(1,)
 
  // Haetaan color Scheme arvo
-let themePick = document.getElementById('theme-pick').value
+const themePick = document.getElementById('theme-pick').value
 
 // API
 fetch("https://www.thecolorapi.com/scheme?hex=" + hexArvo + "&mode=" + themePick + "&count=5")
@@ -39,11 +40,8 @@ fetch("https://www.thecolorapi.com/scheme?hex=" + hexArvo + "&mode=" + themePick
     document.getElementById('color-3').style.backgroundColor = hexValue3
     document.getElementById('color-4').style.backgroundColor = hexValue4
     document.getElementById('color-5').style.backgroundColor = hexValue5
-
-
   }
     )
-
 }
 
 
